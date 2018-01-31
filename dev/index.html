@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<title>Title</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="body">
+<div class="wrapper">
+	<header class="header">
+		<a href="#" class="header__logo"><img class="header__img" src="img/logo.png" alt="yasTuning"></a>
+	</header>
+
+	<main class="main">
+		<h1 class="title"><span class="title__span">YasTuning</span> Fileservice</h1>
+		<ul class="list">
+			<li class="list__li">Fast free registration</li>
+			<li class="list__li">Buy YT Credits</li>
+			<li class="list__li">Upload file and select option</li>
+			<li class="list__li">After 20-60 min download ready file</li>
+		</ul>
+		<div class="btns">
+			<a href="#" class="btn btn__fill btn__registr-js">Register</a>
+			<a href="#" class="btn btn__transparent btn__login-js">Login</a>
+		</div>
+		<div class="main__vertical">For professionals</div>
+	</main>
+</div>
+
+<div class="overlay">
+	<div class="overlay__content">
+		<form class="popup-form popup-form__login" action="#" method="post">
+			<button class="popup-form__close" type="button">Close</button>
+			<div class="popup-form__title">Already a customer?</div>
+			<label class="popup-form__label">
+				<span class="popup-form__label-name">E-mail address<span class="popup-form__required-input">*</span></span>
+				<input class="popup-form__input" type="email" name="email" placeholder="E-mail address" required>
+			</label>
+			<label class="popup-form__label">
+				<span class="popup-form__label-name">Password<span class="popup-form__required-input">*</span></span>
+				<input class="popup-form__input" type="password" name="pass" placeholder="Password" required>
+			</label>
+			<a href="#" class="popup-form__link-forgot">Forgot your password?</a>
+			<button class="btn btn__fill popup-form__button" type="submit">Login</button>
+		</form>
+
+		<form class="popup-form popup-form__forgot" action="#" method="post">
+			<button class="popup-form__close" type="button">Close</button>
+			<div class="popup-form__title">Forgot your password?</div>
+			<label class="popup-form__label">
+				<span class="popup-form__label-name">E-mail address<span class="popup-form__required-input">*</span></span>
+				<input class="popup-form__input" type="email" name="email" placeholder="E-mail address" required>
+			</label>
+			<button class="btn btn__fill popup-form__button" type="submit">Recovery</button>
+		</form>
+
+		<div class="popup-form popup-form__registr" action="#" method="post">
+			<button class="popup-form__close" type="button">Close</button>
+			<div class="popup-form__title popup-form__title_caps">Registr?</div>
+			<div class="tabs">
+				<ul class="tabs-nav">
+					<li class="tabs-nav__li">I am an individual</li>
+					<li class="tabs-nav__li">I am a company</li>
+				</ul>
+				<ul class="tabs-content">
+					<li class="tabs-content__tab">
+						<form action="#" method="post">
+							<fieldset class="popup-form__fieldset">
+								<legend class="popup-form__legend">Personal information</legend>
+								<label class="popup-form__label">
+									<span class="popup-form__label-name">First name<span class="popup-form__required-input">*</span></span>
+									<input class="popup-form__input" type="text" name="name" placeholder="Name" required>
+								</label>
+								<label class="popup-form__label">
+									<span class="popup-form__label-name">Last name<span class="popup-form__required-input">*</span></span>
+									<input class="popup-form__input" type="text" name="last-name" placeholder="Last name" required>
+								</label>
+								<div class="cols">
+									<label class="popup-form__label cols__60">
+										<span class="popup-form__label-name">Street<span class="popup-form__required-input">*</span></span>
+										<input class="popup-form__input" type="text" name="street" placeholder="" required>
+									</label>
+									<label class="popup-form__label cols__40">
+										<span class="popup-form__label-name">Number/box<span class="popup-form__required-input">*</span></span>
+										<input class="popup-form__input" type="text" name="number/box" placeholder="" required>
+									</label>
+								</div>
+								<div class="cols">
+									<label class="popup-form__label cols__40">
+										<span class="popup-form__label-name">Zip code<span class="popup-form__required-input">*</span></span>
+										<input class="popup-form__input" type="text" name="zip" placeholder="" required>
+									</label>
+									<label class="popup-form__label cols__60">
+										<span class="popup-form__label-name">City<span class="popup-form__required-input">*</span></span>
+										<input class="popup-form__input" type="text" name="city" placeholder="" required>
+									</label>
+								</div>
+								<label class="popup-form__label">
+									<span class="popup-form__label-name">Country<span class="popup-form__required-input">*</span></span>
+									<select class="popup-form__input popup-form__input_margin-b" name="country" required>
+										<option value="1">country 1</option>
+										<option value="2">country 2</option>
+										<option value="3">country 3</option>
+										<option value="4">country 4</option>
+									</select>
+								</label>
+								<div class="cols cols_add-text">
+									<label class="popup-form__label cols__40">
+										<span class="popup-form__label-name">Phone prefix<span class="popup-form__required-input">*</span></span>
+										<input class="popup-form__input" type="text" name="phone-prefix" required>
+									</label>
+									<label class="popup-form__label cols__60">
+										<span class="popup-form__label-name">City<span class="popup-form__required-input">*</span></span>
+										<input class="popup-form__input" type="text" name="phone-number" required>
+									</label>
+									<p class="cols__100 popup-form__add-text">To receive text notifications on your mobile, please include your country prefix</p>
+								</div>
+							</fieldset>
+							<fieldset class="popup-form__fieldset">
+								<legend class="popup-form__legend">Account information</legend>
+								<label class="popup-form__label">
+									<span class="popup-form__label-name">Main e-mail address<span class="popup-form__required-input">*</span></span>
+									<input class="popup-form__input" type="email" name="name" placeholder="example@mail.com" required>
+								</label>
+								<label class="popup-form__check-label">
+									<input class="popup-form__check-input" type="checkbox" name="send-invoices" checked>
+									<span class="popup-form__check-span"></span>
+									<span class="popup-form__check-name">Send invoices to an alternate e-mail address</span>
+								</label>
+								<label class="popup-form__check-label popup-form__check-label_margin-b">
+									<input class="popup-form__check-input" type="checkbox" name="send-invoices">
+									<span class="popup-form__check-span"></span>
+									<span class="popup-form__check-name">Send file service notifications to an alternate e-mail address</span>
+								</label>
+								<label class="popup-form__label">
+									<span class="popup-form__label-name">Password<span class="popup-form__required-input">*</span></span>
+									<input class="popup-form__input" type="password" name="pass-1" required>
+								</label>
+								<label class="popup-form__label popup-form__label_margin-b">
+									<span class="popup-form__label-name">Confirm password<span class="popup-form__required-input">*</span></span>
+									<input class="popup-form__input" type="password" name="pass-2" required>
+								</label>
+							</fieldset>
+							<label class="popup-form__check-label">
+								<input class="popup-form__check-input" type="checkbox" name="send-invoces">
+								<span class="popup-form__check-span"></span>
+								<span class="popup-form__check-name">Send file service notifications to an alternate e-mail address</span>
+							</label>
+							<button class="btn btn__fill popup-form__button" type="submit">Register</button>
+							<p class="popup-form__required-info">(*) required fields</p>
+						</form>
+					</li>
+					<li class="tabs-content__tab">
+						<form action="#" method="post">
+							<fieldset class="popup-form__fieldset">
+								<legend class="popup-form__legend">I am a company</legend>
+								<label class="popup-form__label">
+									<span class="popup-form__label-name">Company name<span class="popup-form__required-input">*</span></span>
+									<input class="popup-form__input" type="text" name="company-name" placeholder="Company name" required>
+								</label>
+								<label class="popup-form__label">
+									<span class="popup-form__label-name">Vat<span class="popup-form__required-input">*</span></span>
+									<select class="popup-form__input popup-form__input_margin-b" name="country" required>
+										<option value="1">vat 1</option>
+										<option value="2">vat 2</option>
+										<option value="3">vat 3</option>
+										<option value="4">vat 4</option>
+									</select>
+								</label>
+								<label class="popup-form__label">
+									<span class="popup-form__label-name">Vat number<span class="popup-form__required-input">*</span></span>
+									<input class="popup-form__input" type="text" name="phone-prefix" required>
+								</label>
+							</fieldset>
+							<fieldset class="popup-form__fieldset">
+								<legend class="popup-form__legend">Personal information</legend>
+								<label class="popup-form__label">
+									<span class="popup-form__label-name">First name<span class="popup-form__required-input">*</span></span>
+									<input class="popup-form__input" type="text" name="name" placeholder="Name" required>
+								</label>
+								<label class="popup-form__label">
+									<span class="popup-form__label-name">Last name<span class="popup-form__required-input">*</span></span>
+									<input class="popup-form__input" type="text" name="last-name" placeholder="Last name" required>
+								</label>
+								<div class="cols">
+									<label class="popup-form__label cols__60">
+										<span class="popup-form__label-name">Street<span class="popup-form__required-input">*</span></span>
+										<input class="popup-form__input" type="text" name="street" placeholder="" required>
+									</label>
+									<label class="popup-form__label cols__40">
+										<span class="popup-form__label-name">Number/box<span class="popup-form__required-input">*</span></span>
+										<input class="popup-form__input" type="text" name="number/box" placeholder="" required>
+									</label>
+								</div>
+								<div class="cols">
+									<label class="popup-form__label cols__40">
+										<span class="popup-form__label-name">Zip code<span class="popup-form__required-input">*</span></span>
+										<input class="popup-form__input" type="text" name="zip" placeholder="" required>
+									</label>
+									<label class="popup-form__label cols__60">
+										<span class="popup-form__label-name">City<span class="popup-form__required-input">*</span></span>
+										<input class="popup-form__input" type="text" name="city" placeholder="" required>
+									</label>
+								</div>
+								<label class="popup-form__label">
+									<span class="popup-form__label-name">Country<span class="popup-form__required-input">*</span></span>
+									<select class="popup-form__input popup-form__input_margin-b" name="country" required>
+										<option value="1">country 1</option>
+										<option value="2">country 2</option>
+										<option value="3">country 3</option>
+										<option value="4">country 4</option>
+									</select>
+								</label>
+								<div class="cols cols_add-text">
+									<label class="popup-form__label cols__40">
+										<span class="popup-form__label-name">Phone prefix<span class="popup-form__required-input">*</span></span>
+										<input class="popup-form__input" type="text" name="phone-prefix" required>
+									</label>
+									<label class="popup-form__label cols__60">
+										<span class="popup-form__label-name">City<span class="popup-form__required-input">*</span></span>
+										<input class="popup-form__input" type="text" name="phone-number" required>
+									</label>
+									<p class="cols__100 popup-form__add-text">To receive text notifications on your mobile, please include your country prefix</p>
+								</div>
+							</fieldset>
+							<fieldset class="popup-form__fieldset">
+								<legend class="popup-form__legend">Account information</legend>
+								<label class="popup-form__label">
+									<span class="popup-form__label-name">Main e-mail address<span class="popup-form__required-input">*</span></span>
+									<input class="popup-form__input" type="email" name="name" placeholder="example@mail.com" required>
+								</label>
+								<label class="popup-form__check-label">
+									<input class="popup-form__check-input" type="checkbox" name="send-invoices" checked>
+									<span class="popup-form__check-span"></span>
+									<span class="popup-form__check-name">Send invoices to an alternate e-mail address</span>
+								</label>
+								<label class="popup-form__check-label popup-form__check-label_margin-b">
+									<input class="popup-form__check-input" type="checkbox" name="send-invoices">
+									<span class="popup-form__check-span"></span>
+									<span class="popup-form__check-name">Send file service notifications to an alternate e-mail address</span>
+								</label>
+								<label class="popup-form__label">
+									<span class="popup-form__label-name">Password<span class="popup-form__required-input">*</span></span>
+									<input class="popup-form__input" type="password" name="pass-1" required>
+								</label>
+								<label class="popup-form__label popup-form__label_margin-b">
+									<span class="popup-form__label-name">Confirm password<span class="popup-form__required-input">*</span></span>
+									<input class="popup-form__input" type="password" name="pass-2" required>
+								</label>
+							</fieldset>
+							<label class="popup-form__check-label">
+								<input class="popup-form__check-input" type="checkbox" name="send-invoces">
+								<span class="popup-form__check-span"></span>
+								<span class="popup-form__check-name">Send file service notifications to an alternate e-mail address</span>
+							</label>
+							<button class="btn btn__fill popup-form__button" type="submit">Register</button>
+							<p class="popup-form__required-info">(*) required fields</p>
+						</form>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>

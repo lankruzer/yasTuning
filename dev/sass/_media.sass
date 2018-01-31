@@ -1,0 +1,122 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.header__logo
+		width: 98px
+	.title
+		font-size: 52px
+		line-height: 5px
+	.list
+		margin-bottom: 40px
+	.btn
+		min-width: 212px
+		margin-right: 30px
+		line-height: 50px
+	.main__vertical
+		top: 152px
+		font-size: 26px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.header__logo
+		width: 88px
+	.title
+		margin-bottom: 20px
+		font-size: 42px
+		line-height: 42px
+	.list
+		margin-bottom: 25px
+		&__li
+			font-size: 22px
+	.btn
+		min-width: 182px
+		margin-right: 20px
+		font-size: 20px
+		line-height: 40px
+	.main__vertical
+		font-size: 24px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.wrapper
+		padding: 30px 15px
+		width: calc(100% - 50px)
+	.header__logo
+		width: 78px
+	.title
+		font-size: 32px
+		line-height: 32px
+	.list__li
+		margin-bottom: 5px
+		font-size: 18px
+		line-height: 24px
+	.main__vertical
+		top: 100px
+		font-size: 18px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 580px)
+	.wrapper
+		width: 100%
+	.main
+		padding-right: 30px
+		width: 100%
+		box-sizing: border-box
+	.title
+		margin-bottom: 15px
+		font-size: 26px
+	.list
+		&__li
+			padding-left: 20px
+			font-size: 18px
+			line-height: 22px
+			&::before
+				top: 12px
+				transform: translateY(0)
+				width: 13px
+	.btn
+		margin-right: 10px
+		margin-bottom: 15px
+		min-width: 150px
+		font-size: 18px
+
+	.popup-form
+		padding: 15px 15px 20px
+		&__close
+			top: 0
+			right: 0
+		&__title
+			margin-bottom: 20px
+		&__legend
+			margin-bottom: 15px
+			font-size: 22px
+			line-height: 28px
+		&__input
+			padding: 0 10px
+			min-height: 40px
+			font-size: 16px
+		&__add-text
+			margin-top: 5px
+			line-height: 16px
+		&__check-span
+			margin-right: 5px
+		&__check-name
+			width: 86%
+
+	.tabs-nav
+		margin-bottom: 25px
+		&__li
+			padding-bottom: 5px
+			font-size: 20px
+			line-height: 20px
+
+	.cols
+		&__40
+			width: calc(45% - 5px)
+		&__60
+			width: calc(55% - 5px)
+
+
