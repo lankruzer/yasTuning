@@ -3,6 +3,7 @@ $( document ).ready(function() {
    $( '.btn__login-js' ).click(function(event) {
        event.preventDefault();
        $( '.overlay' ).addClass( 'overlay_active' );
+	   $( 'html, body' ).toggleClass( 'hide-scroll' )
        $( '.popup-form__login' ).addClass( 'popup-form_active' );
    });
 	// /open popup form login
@@ -19,32 +20,58 @@ $( document ).ready(function() {
 	$( '.btn__registr-js' ).click(function(event) {
 		event.preventDefault();
 		$( '.overlay' ).addClass( 'overlay_active' );
+		$( 'html, body' ).toggleClass( 'hide-scroll' )
 		$( '.popup-form__registr' ).addClass( 'popup-form_active' );
 	});
 	// /open popup form registr
+	
+	// open popup info	
+	var infoTime = setTimeout(function() {
+		$( 'html, body' ).toggleClass( 'hide-scroll' )
+		$( '.overlay' ).removeClass( 'overlay_active' );
+		$( '.popup-form' ).removeClass( 'popup-form_active' );	
+	}, 7500);
+	
+	function openInfoPopup(timeClose) {
+		$( '.overlay' ).addClass( 'overlay_active' );
+		$( 'html, body' ).toggleClass( 'hide-scroll' )
+		$( '.popup-form__info' ).addClass( 'popup-form_active' );
+		infoTime;
+	}
+	
+	openInfoPopup();
+	// /open popup info
 
+	
+	
 	// close popup form on click close
 	$( '.popup-form__close' ).click(function(event) {
 	    event.preventDefault();
+		$( 'html, body' ).toggleClass( 'hide-scroll' )
 		$( '.overlay' ).removeClass( 'overlay_active' );
 		$( '.popup-form' ).removeClass( 'popup-form_active' );
+		clearTimeout(infoTime);
 	});
 	// /close popup form on click close
 
-	// close popup contact form on click outside
+	// close popup form on click outside
 	$( '.overlay__content' ).click(function(event) {
 		if ( $( '.overlay__content' ).has(event.target).length === 0 ){
             $('.overlay').removeClass('overlay_active');
+			$( 'html, body' ).toggleClass( 'hide-scroll' )
             $('.popup-form').removeClass('popup-form_active');
+			clearTimeout(infoTime);
     	}
 	});
-	// /close popup contact form on click outside
+	// /close popup form on click outside
 
 	// close popup on press Esc
 	$(document).keyup(function(event) {
 		if ( event.keyCode == 27 ) {
 			$( '.overlay' ).removeClass( 'overlay_active' );
 			$( '.popup-form' ).removeClass( 'popup-form_active' );
+			$( 'html, body' ).toggleClass( 'hide-scroll' )
+			clearTimeout(infoTime);
 		}
 	});
 	// /close popup on press Esc

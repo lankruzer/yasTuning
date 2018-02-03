@@ -501,6 +501,11 @@ body {
   background-repeat: no-repeat;
 }
 
+html.hide-scroll,
+body.hide-scroll {
+  overflow: hidden;
+}
+
 .wrapper {
   margin: 0 auto;
   padding: 40px 20px;
@@ -930,7 +935,8 @@ body {
 }
 
 .popup-form__add-text {
-  margin: 0;
+  display: block;
+  margin: 0 0 15px !important;
   font-size: 14px;
   line-height: 30px;
   font-style: italic;
@@ -942,6 +948,20 @@ body {
   font-size: 16px;
   line-height: 30px;
   color: #ff0000;
+}
+
+.popup-form__info-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #494949;
+}
+
+select.popup-form__input option {
+  min-height: 42px;
+  font-size: 16px;
+  line-height: 42px;
 }
 
 .tabs-nav {
@@ -1188,5 +1208,10 @@ body {
   .cols__60 {
     width: -webkit-calc(55% - 5px);
     width: calc(55% - 5px);
+  }
+  select.popup-form__input option {
+    min-height: 34px;
+    font-size: 16px;
+    line-height: 34px;
   }
 }
